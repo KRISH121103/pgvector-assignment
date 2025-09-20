@@ -1,0 +1,8 @@
+import { defineConfig } from "mastra";
+
+export default defineConfig({
+  db: {
+    provider: "postgres",
+    url: process.env.DATABASE_URL!,
+  },
+});
